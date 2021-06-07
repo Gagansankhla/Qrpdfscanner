@@ -56,8 +56,8 @@ input::placeholder{
 	transition: color 0.3s ease;
 }
 
-.loginBox input[type = "submit"]
-{
+.btn{
+	width: 100%;
 	border: none;
 	outline: none;
 	height: 40px;
@@ -68,7 +68,7 @@ input::placeholder{
 	color: #fff;
 }
 
-.loginBox input[type="submit"]:hover
+.btn:hover
 {
 	cursor: pointer;
 	background: #ffc107;
