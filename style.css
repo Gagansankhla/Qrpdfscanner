@@ -8,5 +8,69 @@ header{
 	height:100vh;
 	background-size: cover;
 	background-position: center;
-	filter: blur(4px);
+	/*filter: blur(4px);*/
+}
+.main{
+	font-size: 30px;
+	padding: 70px 30px;
+	z-index: 99999;
+	color: white;
+	text-align: center;
+}
+.loginBox{
+	color: white;
+	width: 320px;
+	height: 420px;
+	top: 65%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.loginBox input{
+	border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus::placeholder{
+	color: transparent;
+}
+
+input::placeholder{
+	color: #222;
+	transition: color 0.3s ease;
+}
+
+.loginBox input[type = "submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 18px;
+	border-radius: 20px;
+	background: #fb2525;
+	color: #fff;
+}
+
+.loginBox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
 }
