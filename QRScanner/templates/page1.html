@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>page1</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'style1.css'%}">
 </head>
 <body>
 	<header>

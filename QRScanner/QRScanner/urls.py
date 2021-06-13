@@ -23,4 +23,7 @@ from . import views
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+
+    path('page1', views.page1, name='webpage1')
+
 ]
