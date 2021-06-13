@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>PDF Scanner</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'style.css'%}">
 </head>
 <body>
 	<div class="main">
@@ -13,7 +14,7 @@
 		<form>
 			<input type="text" placeholder="Enter Name">
 		</form>
-		<a href="Qrpage/page1.html">
+		<a href="page1.html">
 			<button class="btn">SUBMIT</button>
 		</a>
 	</div>
