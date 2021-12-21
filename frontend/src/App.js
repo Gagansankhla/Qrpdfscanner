@@ -1,29 +1,23 @@
 import './App.css';
 import {
   BrowserRouter,
-  Switch,
+  Routes,
   Route,
-  Link
 } from "react-router-dom";
 import Sender from './components/Sender';
 import Reciever from './components/Reciever';
+import Home from './components/Home';
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <div className="App">
-          <button >Send</button>
-          <button>Recieve</button>
-
-          <Route exact path="/send">
-            <Sender />
-          </Route>
-          <Route exact path="/receive">
-            <Reciever />
-          </Route>
-        </div>
-      </Switch>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/send' element={<Sender />} />
+          <Route exact path='/receive' element={<Reciever />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
