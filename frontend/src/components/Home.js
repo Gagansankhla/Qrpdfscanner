@@ -5,8 +5,8 @@ function Home() {
     const navigate = useNavigate();
     return (
         <div>
-            <button onClick={navigate('/send')}>Send</button>
-            <button onClick={navigate('/receive')}>Recieve</button>
+            <button onClick={()=>{navigate('/send')}}>Send</button>
+            <button onClick={() => {navigate('/receive')}}>Recieve</button>
         </div>
     )
 }
